@@ -1,0 +1,39 @@
+name: Build CV PDF
+
+on:
+  push:
+    paths:
+      - 'cv.tex'
+      - 'clean_cv.cls'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Checkout the repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2️⃣ Compile LaTeX CV
+      - name: Compile LaTeX CV
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv.tex
+
+      # 3️⃣ Optional: Commit generated PDF back to the repo
+      - name: Commit PDF back to repo
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update CV PDF"
+          file_pattern: "cv.pdf"
+
+      # 4️⃣ Optional: Push PDF to GitHub Pages repo
+      - name: Push PDF to GitHub Pages repo
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          repository: bhgupta20/bhgupta20.github.io
+          branch: main
+          folder: .  # root folder contains cv.pdf
+          target_folder: cv  # where PDF will go in Pages repo
+          github_token: ${{ secrets.GITHUB_TOKEN }}
