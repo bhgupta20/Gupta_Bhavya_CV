@@ -1,5 +1,4 @@
 name: Build CV PDF
-
 on:
   push:
     branches:
@@ -27,5 +26,4 @@ jobs:
           repository: bhgupta20/bhgupta20.github.io
           branch: main
           folder: .  # root folder contains cv.pdf
-          target_folder: cv  
           github_token: ${{ secrets.GITHUB_TOKEN }}
