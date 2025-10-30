@@ -2,9 +2,10 @@ name: Build CV PDF
 
 on:
   push:
-    paths:
-      - 'cv.tex'
-      - 'clean_cv.cls'
+    branches:
+      - main
+permissions:
+  contents: write
 jobs:
   build_latex:
     runs-on: ubuntu-latest
