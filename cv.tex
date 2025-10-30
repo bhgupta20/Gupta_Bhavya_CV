@@ -1,0 +1,454 @@
+\documentclass{clean_cv}
+
+% Add a BibTeX-style file encoding all of your publications to include here. You can export this from Zotero. Only include
+% publications you want to appear here!
+\addbibresource{publications.bib}
+\usepackage{setspace}
+\usepackage{color,soul}
+
+\author{Bhavya Gupta}
+\headlineposition{Aspiring Astrophysicist}
+\begin{document}
+\maketitle
+% In this section, you can use any of the FontAwesome icons. The commands \faCenter and \faCenterStyle have been defined to properly center the icons
+% when using the default font settings.
+%
+% You can use any of the icons listed in the Fontawesome5 package documentation (https://ctan.math.utah.edu/ctan/tex-archive/fonts/fontawesome5/doc/fontawesome5.pdf)
+% If you need to specify a specific style (as is done here for the address card), you should use the two-argument \faCenterCycle command
+\begin{center}
+\begin{tabular}{lllll}
+    \faIcon{envelope} \href{mailto:bhgupta@mit.edu}{bhgupta@mit.edu} \ $|$ \
+    \faIcon{github} \href{https://github.com/bhgupta20}{bhgupta20} \ $|$ \
+    \faIcon{globe} \href{https://sites.google.com/view/bhgupta}{Website} \ $|$ \
+    \faIcon{linkedin} \href{https://www.linkedin.com/in/bhavya-gupta-a696691b4/}{Bhavya Gupta} \ $|$ \
+    \faIcon{phone-alt} (440) 561-8140 \\
+\end{tabular}
+\begin{tabular}{l}
+    \faIcon{home} 391 Commonwealth Ave, Boston, MA 02115 \\
+\end{tabular}
+\vspace{2pt} % Small vertical space between lines
+\end{center}
+    \quad 
+    I am an \textbf{A3D3 Post-Baccalaureate Fellow at MIT} and a recent graduate of UC San Diego with a B.S. in Physics (Specialization in Astrophysics). During my undergraduate studies, I developed computational techniques and data analysis skills while investigating various astrophysical phenomena. My research projects have ranged from investigating the ionized gas in the interstellar medium of young, star-forming galaxies to modeling dark matter through stellar stream interactions and dynamics. My current work focuses on developing machine-learning methods for real-time gravitational-wave detection. I aim to \textbf{advance multi-messenger astrophysics by applying modern AI techniques} to uncover new physical insights from the rapidly growing volume of astronomical data as \textbf{I pursue a PhD}. 
+\vspace{-1.em}
+\renewcommand*\contentsname{}
+    
+%\vspace{-1.em}
+\renewcommand*\contentsname{}
+
+%\begin{spacing}{0.01}
+%\tableofcontents
+%\end{spacing}
+%%%%%EDUCATION%%%%%%
+\section{Education}
+\label{sec: education}
+
+% The datetabular environment takes one argument, which is the width of the left date column. As seen here:
+%   9em is a good choice for "dual-date" formats (e.g. Sep 2015 - Nov 2019).
+%   4em is a good choice for month/year dates (Sep 2014).
+%   2em is a good choice for year-only dates (as seen in the publications)
+\begin{datetabular}{9em}
+% This is just a tabular environment, for the most part. The date entry command has been defined for
+% convenience. It takes two arguments, the first is the date, and the second is whatever you wish placed to the right.
+\dateentry{Sep 2020 -- Jun 2024}{
+\textbf{University of California, San Diego (Revelle College), La Jolla, CA}
+
+\textit{B.S. in Physics with Specialization in Astrophysics}
+\begin{itemize}
+    \item \textit{Department Honors: High Distinction} -- GPA: 3.81/4.00
+    \item Minor in Mathematics
+    \item Honors Thesis: \href{https://drive.google.com/file/d/1rnXnXqiScRZL1ZBdSCI-yFbN3iEXHNlf/view?usp=sharing}{\textit{Probing Dark Matter Subhalo Impacts on Stellar Streams with Graph Neural Networks and Normalizing Flows}}
+    \vspace{-1.5em}
+\end{itemize}
+}
+\end{datetabular}
+\eatvspace
+
+%%%%%%%%%%EMPLOYMENT%%%%%%%%%%%%
+\section{Research Experience}
+\label{sec: research}
+
+\textbf{Massachusetts Institute of Technology, Cambridge, MA}
+
+\begin{datetabular}{9em}
+\dateentry{July 2025 -- Ongoing}{
+\textit{Accelerated AI Algorithms for Data Driven Discovery in Physics (A3D3) Post-baccalaureate Fellow}
+\begin{itemize}
+    \item Under the supervision of Dr. Erik Katsavounidis, I'll work in the analysis of gravitational-wave data from the LIGO detectors to identify astrophysical sources and to improve the sensitivity of the searches via the use of Artificial Intelligence methods
+\end{itemize}\eatvspace
+}
+\end{datetabular}
+
+\textbf{University of California, San Diego, La Jolla, CA}
+
+\begin{datetabular}{9em}
+\dateentry{Jan 2023 -- June 2025}{
+\textit{Streams} x \textit{Machine Learning - Undergraduate Researcher}
+\begin{itemize}
+    \item Worked with Professor Javier Duarte and Professor Tongyan Lin on modeling the interactions between dark matter (DM) subhalos and stellar streams, examining spurs and gaps to infer the dynamical properties of these subhalos and understand their distribution in the galaxy.
+    \item Adapted Denise Erkal's \href{https://academic.oup.com/mnras/article/450/1/1136/1008580}{analytic equations} for modeling velocity perturbations in stellar streams due to DM subhalos flyby, using \texttt{Gala} and \texttt{Galpy} stream generation methods. 
+    \item Validated that synthetic streams closely match the analytic predictions and understood how the different DM subhalo properties affect stream morphology and kinematics, thereby helping us put constraints on these properties.
+    \item Addressed the limitations of traditional Markov Chain Monte Carlo (MCMC) methods, which rely on tractable likelihood functions to recover DM subhalo parameters, by employing advanced Machine Learning (ML) techniques such as Graph Neural Networks (GNNs), Normalizing Flows (nflows), and Simulation-Based Inference (SBI) for scenarios where likelihoods are intractable.
+    \item Modified GNN models and fine-tuned nflows architectures to analyze and model complex posterior distributions to recover the impact properties of DM subhalos from synthetic stellar streams.
+    \item Evaluated and compared MCMC and SBI approaches for inferring DM subhalo parameters, revealing that SBI, despite its potential, did not achieve the expected efficiency and often produced broader posterior distributions compared to the narrower, more accurate posteriors from MCMC.
+\end{itemize}\eatvspace
+}    
+\end{datetabular}
+
+\begin{datetabular}{9em}
+\dateentry{}{
+\begin{itemize}
+    \item Awarded \$7,500 in funding for the research work.
+    \item Presented at \textit{243rd American Astronomical Society Conference} in New Orleans, LA.
+\end{itemize}\eatvspace
+}
+\end{datetabular}
+
+\begin{datetabular}{9em}
+\dateentry{Sep 2022 -- Dec 2022}{
+\textit{{Alison Coil Lab - Undergraduate Researcher}}
+\begin{itemize}
+    \item Coordinated with Professor Alison Coil to investigate the kinematic properties of outflows from accreting supermassive black holes (SMBHs) that drive galactic evolution.
+    \item Conducted data modeling and spectral analysis using Python and IDL's IFSFIT software to perform a two-component Gaussian analysis of SMBH emission spectra, focusing on velocity dispersion in kinematic maps.
+    \item Identified the need for a more accurate three-component model to better represent the complex outflow data from SMBHs, highlighting the limitations of the initial two-component approach.
+\end{itemize}\eatvspace
+}
+\end{datetabular}
+
+\textbf{Carnegie Observatories, Pasadena, CA}
+
+\begin{datetabular}{9em}
+\dateentry{Jun 2022 -- Aug 2022}{
+\textit{{Carnegie Astrophysics Summer Student Internship (CASSI) - Summer Intern}}
+\begin{itemize}
+    \item Worked with Carnegie Staff Astronomer Peter Senchyna to investigate the young, star-forming galaxies in the local universe (z < 1) to understand the distribution of highly-ionized [C II] and [O III] gas, using local analogs to study early galactic formation due to the challenges involved in observing high-redshift galaxies.
+    \item Probed the structure of the Interstellar Medium (ISM) in local analogs to see if they were elevated in [O III] emission in comparison to [C II] as observed in high-redshift systems (z > 6).
+    \item Analyzed [O III] and [C II] emission lines from SOFIA data cubes using the SOSPEX package, focusing on flux extraction, and examining ionized gas properties by validating results through comparison with the Dwarf Galaxy Survey (DGS).
+    \item Identified that [C II] is not suppressed; there is strong lower ionization emission in photodissociation regions of the highly-ionized local analogs in contrast with high-redshift systems observed with ALMA, suggesting differences in the ISM structure.
+    \item Received \$6,000 stipend for the research work.
+    \item Presented at \textit{241st American Astronomical Society Conference} in Seattle, WA. 
+\end{itemize}\eatvspace
+}
+\end{datetabular}
+
+\textbf{Center for Matter at Atomic Pressures (CMAP), University of Rochester, Rochester, NY (Remote)}
+
+\begin{datetabular}{9em}
+\dateentry{Aug 2021}{
+\textit{{CMAP Undergraduate Summer School - Summer Student}}
+\begin{itemize}
+    \item Coordinated with Professor Pierre Gourdain and utilized scientific Python packages to analyze the collisions in plasma and investigate smooth particle hydrodynamics, magnetohydrodynamics, and single-particle motion.
+    \item Analyzed simulations for building a two-layer planet to diagnose how density and particle size affect planet formation.
+    \item Specialized in identifying the role of planetary characteristics in the evaporation rate for a planet’s atmosphere.
+\end{itemize}\eatvspace
+}
+\end{datetabular}
+
+\section{Presentations and Publications}
+\label{sec: conference presentations}
+
+\begin{datetabular}{2em}
+\dateentry{2026}{
+\textit{247th American Astronomical Society Meeting Oral Presentation (Future Talk)}
+\begin{itemize}
+    \item \href{}{``Applying Machine Learning for Low-Latency Gravitational Waves Detection''}
+\end{itemize}\eatvspace}
+\end{datetabular}
+
+\begin{datetabular}{2em}
+\dateentry{2025}{
+\textit{NSF HDR Ecosystem Conference 2025}
+\begin{itemize}
+    \item \href{https://drive.google.com/file/d/1eRe-dSE9yFSUd-8NpiRZ0nT2BG9wJj5F/view?usp=sharing}{``Accelerating Gravitational Wave Astronomy with Machine Learning''}
+\end{itemize}\eatvspace}
+\end{datetabular}
+
+\begin{datetabular}{2em}
+\dateentry{2024}{
+\textit{243rd American Astronomical Society Meeting Poster Presentation}
+\begin{itemize}
+    \item \href{https://aas242-aas.ipostersessions.com/?s=E0-5A-A2-B5-0F-67-3A-51-F1-BB-09-60-3A-3F-4A-B7}{``Probing Dark Matter Subhalo Impacts on Stellar Streams with Graph Neural Networks''}
+\end{itemize}\eatvspace}
+\end{datetabular}
+
+\begin{datetabular}{2em}
+\dateentry{2023}{
+\textit{Undergraduate Summer Research Award Poster Presentation, UC San Diego}
+\begin{itemize}
+    \item ``Simulating the Effects of Dark Matter Subhalos on Stellar Streams''
+\end{itemize}\eatvspace}
+\end{datetabular}
+
+\begin{datetabular}{2em}
+\dateentry{2023}{
+\textit{241st American Astronomical Society Meeting Poster Presentation}
+\begin{itemize}
+    \item \href{https://aas241-aas.ipostersessions.com/?s=51-03-8D-EA-8B-B0-90-46-9E-AC-CB-A2-61-00-75-3B}{``Analyzing [O III] and [C II] Emission in Highly Ionized Local Systems''}
+\end{itemize}\eatvspace}
+\end{datetabular}
+
+\begin{datetabular}{2em}
+\dateentry{2022}{
+\textit{CASSI Summer Student Research Symposium}
+\begin{itemize}
+    \item \href{https://www.youtube.com/watch?v=oG5mrh-YyOI\&list=PL6RwPqS-Cv5b3lEMyIYG2nkRUUTnLDN7B\&index=9}{``Analyzing Far-IR [O III] and [C II] Emission Using SOFIA in Highly-Ionized Local Galaxies''}
+\end{itemize}\eatvspace}
+\end{datetabular}
+
+\begin{datetabular}{2em}
+\dateentry{2022}{
+\textit{CASSI Summer Student Research Poster Presentation}
+\begin{itemize}
+    \item {``Analyzing [O III] and [C II] Emission in Highly Ionized Local Systems''}
+    \item Won an award for the best poster presentation among the cohort.
+\end{itemize}\eatvspace}
+\end{datetabular}
+
+\section{Leadership \& Clubs}
+\label{sec: leadership and clubs}
+
+\textbf{Astronomy Club at UC San Diego, La Jolla, CA}
+
+\begin{datetabular}{9em}
+\dateentry{Mar 2023 -- Jun 2024}{
+\textit{President}
+\begin{itemize}
+    \item Executed the re-establishment and registration of the club (75 members), led a dedicated team of 8 board members, and secured funding of \$1,500 from the Student Success Center.
+    \item Organized 3 star-gazing events on campus, and 2 off-campus star-gazing events (Tierra Del Sol and Anza Borrego) to foster community building and increase participation. Hosted professor research talks to connect eager students with professors. Coordinated with the Department of Astronomy and Astrophysics to lead the 2024 solar eclipse viewing event with 100 students, multiple telescopes, and a live solar tracking screen.
+    \item Mentored new board members in event organization and media management by contributing to long-term club sustainability.
+    \item \faDiscord \href{https://discord.gg/Rt6CYv8X}{Astronomy Club at UC San Diego}, \faInstagram \href{https://www.instagram.com/ucsdastronomyclub/?hl=en}{ucsdastronomyclub}
+\end{itemize}\eatvspace
+}
+\end{datetabular}
+
+\textbf{Society of Physics Students at UC San Diego, La Jolla, CA}
+
+\begin{datetabular}{9em}
+\dateentry{Sep 2020 -- Jun 2023}{
+\textit{Media Chair and Website Designer}
+\begin{itemize} 
+    \item Led the media team of 4 members, utilizing a task matrix to delegate responsibilities and ensure timely project completion.
+    \item Designed promotional posters for events across multiple platforms, \faInstagram \href{https://www.instagram.com/spsucsd/}{spsucsd}, \faDiscord \href{https://discord.gg/4vXnKyBm}{SPS at UC San Diego}, and managed the upkeep of the \faGlobe \href{https://sites.google.com/view/spsucsandiego/home}{SPS website}.
+    \item Developed a professional website from scratch to enhance the club’s online presence.
+    \item Initiated and implemented in-person event promotion in both lower and upper-division physics and mathematics courses, increasing event attendance and awareness.
+\end{itemize}\eatvspace}
+\end{datetabular}
+
+\section{Teaching Experience}
+\label{sec: teaching experience}
+
+\textbf{Unlimited Learning, La Jolla, CA}
+
+\begin{datetabular}{9em}
+\dateentry{Sep 2024 -- Dec 2024}{
+\textit{{Contract Tutor}}
+\begin{itemize}
+    \item Tutored college students in mathematics and physics, providing personalized instruction to enhance understanding of complex concepts and improve academic performance.
+    \item Developed custom lesson plans, practice problems, and review materials to help students prepare for exams and reinforce key topics in vector calculus, linear algebra, and classical mechanics.
+\end{itemize}\eatvspace
+}
+\end{datetabular}
+
+\textbf{Teaching + Learning Commons at UC San Diego, La Jolla, CA}
+
+\begin{datetabular}{9em}
+\dateentry{May 2022 -- Dec 2022}{
+\textit{{Supplemental Instruction Leader}}
+\begin{itemize}
+    \item Facilitated student learning by organizing sessions that foster student-to-student problem-solving interaction (20 students in one session).
+    \item Prepared weekly problem sets and reviewed the class content to better facilitate discussion.
+    \item Courses – Math courses on Vector Calculus I and II (Math 20A, Math 20B, and Math 20C)
+\end{itemize}\eatvspace
+}
+\end{datetabular}
+
+\section{Honors and Awards}
+\label{sec: honors and awards}
+\begin{datetabular}{2em}
+\dateentry{2025}{Accelerated AI Algorithms for Data Driven Discovery in Physics (A3D3) Post-baccalaureate Fellowship
+\begin{itemize}
+    \item A one-year fully-funded research fellowship working at the intersection of AI/ML and Astrophysics.
+\end{itemize}\eatvspace
+}
+\end{datetabular}
+
+\begin{datetabular}{2em}
+\dateentry{2024}{UC San Diego Physical Sciences Dean’s Undergraduate Award for Excellence
+\begin{itemize}
+    \item Awarded to recognize students who have demonstrated academic excellence and promise as researchers in the school's three areas of study: Chemistry and Biochemistry, Mathematics, and Physics.
+    \item Received \$1,000 in recognition of this honor.
+    %\item awarded to 30 out of 4000 undergraduates in Chemistry and Biochemistry, Mathematics, and Physics.
+\end{itemize}\eatvspace
+}
+\end{datetabular}
+
+\begin{datetabular}{2em}
+\dateentry{2020-24}{Revelle Provost Honors %should i write it here
+}
+\end{datetabular}
+
+\begin{datetabular}{2em}
+\dateentry{2023}{School of Physical Sciences Undergraduate Summer Research Award (USRA)
+\begin{itemize}
+    \item Awarded \$7,500 summer research award to conduct a summer research project under the guidance of a UC San Diego faculty member.
+    \item Worked on the Streams x ML research project. %fix the wording here
+\end{itemize}\eatvspace
+}
+\end{datetabular}
+
+\begin{datetabular}{2em}
+\dateentry{2023}{Society of Physics Students Outstanding Chapter Award
+\begin{itemize}
+    \item Awarded by SPS National Office for tireless efforts to enrich the physics community.
+\end{itemize}\eatvspace
+}
+\end{datetabular}
+
+\begin{datetabular}{2em}
+\dateentry{2022}{
+CASSI Summer Student Poster Presentation Award
+}
+\end{datetabular}
+
+\begin{datetabular}{2em}
+\dateentry{2022}{Carnegie Astrophysics Summer Student Internship
+\begin{itemize}
+    \item Received \$6,000 summer research stipend to conduct observational astrophysics research on analyzing observations of nearby star-forming dwarf galaxies and using them to constrain models for metal-poor galaxies at high redshift.
+\end{itemize}\eatvspace
+}
+\end{datetabular}
+
+\begin{datetabular}{2em}
+\dateentry{2021}{NSF CMAP Summer School Award
+\begin{itemize}
+    \item Awarded a stipend of \$300 upon successful completion and the applicants were chosen on the following basis: top applicants—based on their resume or CV, transcript, personal statement, recommendation letters as well as their enrollment at a US college or university.
+\end{itemize}\eatvspace
+}
+\end{datetabular}\eatvspace
+
+\section{Grants}
+\label{sec: grants}
+
+\begin{datetabular}{2 em}
+\dateentry{2023}{
+\textit{Revelle Provost Academic Conference Support, Revelle College, UC San Diego}
+\begin{itemize}
+    \item \$300 grant to cover the costs of the 243rd American Astronomical Society Meeting in New Orleans, Louisiana.
+\end{itemize}\eatvspace
+}
+\end{datetabular}
+
+\section{Skills \& Hobbies} %somewhere add ML stuff and 
+\begin{datetabular}{9em}
+\dateentry{Coding Languages}{Python, MATLAB, Mathematica}
+\end{datetabular}
+\begin{datetabular}{9em}
+\dateentry{Scientific Computation}{Numpy, SciPy, Matplotlib, Numba, Astropy, Pandas, PyTorch, PyTorch Lightning, Keras, CUDA, Scikit-Learn}
+\end{datetabular}
+\begin{datetabular}{9em}
+\dateentry{Softwares}{Excel, Word, Office 365, Teams, Google Suites, LaTeX, Adobe Photoshop, Adobe Lightroom}
+\end{datetabular}
+\begin{datetabular}{9em}
+\dateentry{Operating Systems}{Linux, Unix, Kubernetes, Slurm}
+\end{datetabular}
+\begin{datetabular}{9em}
+\dateentry{Languages}{English (Native), Hindi (Native), Spanish (Intermediate), Thai (Beginner)}
+\end{datetabular}
+\begin{datetabular}{9em}
+\dateentry{Hobbies}{Photography, Painting, Badminton, Cricket, Biking}
+\end{datetabular}
+\eatvspace
+
+\section{Memberships}
+\begin{datetabular}{9em}
+\dateentry{2022 -- Pres.}{American Astronomical Society (AAS) Member}
+\end{datetabular}
+\begin{datetabular}{9em}
+\dateentry{2020 -- Pres.}{American Physical Society (APS) Member}
+\end{datetabular}
+\eatvspace
+
+\section{References}
+\label{sec: references}
+
+\begin{datetabular}{9em}
+\dateentry{Contact for my work in Gravitational Wave Astrophysics, Machine Learning, and A3D3 Post-baccalaureate Fellowship}{
+Erik Katsavounidis, PhD
+\begin{itemize}
+    \item MIT Kavli Institute, MIT LIGO Lab
+    \item Senior Research Scientist
+    \item[ \small{\faCenter{envelope}}] \href{mailto:kats@mit.edu}{kats@mit.edu} 
+\end{itemize}\eatvspace}
+\end{datetabular}
+
+\begin{datetabular}{9em}
+\dateentry{Contact for my work in Machine Learning and A3D3 Post-baccalaureate Fellowship}{
+Javier Duarte, PhD
+\begin{itemize}
+    \item UC San Diego Department of Physics
+    \item Associate Professor
+    \item[ \small{\faCenter{envelope}}] \href{mailto:jduarte@physics.ucsd.edu}{jduarte@physics.ucsd.edu} 
+\end{itemize}\eatvspace}
+\end{datetabular}
+
+\begin{datetabular}{9em}
+\dateentry{Contact for my work at Carnegie Observatories}{
+Peter Senchyna, PhD
+\begin{itemize}
+    \item Staff Astronomer at Carnegie Observatories
+    \item CASSI Advisor
+    \item[ \small{\faCenter{envelope}}] \href{mailto:psenchyna@carnegiescience.edu}{psenchyna@carnegiescience.edu} 
+\end{itemize}
+\vspace{8pt}
+Gwen Rudie, PhD
+\begin{itemize}
+    \item Staff Scientist Carnegie Observatories 
+    \item Director of the CASSI Program
+    \item[ \small{\faCenter{envelope}}] \href{mailto:gwen@carnegiescience.edu}{gwen@carnegiescience.edu} 
+\end{itemize}\eatvspace}
+\end{datetabular}
+
+\begin{datetabular}{9em}
+\dateentry{Contact for my work in Dark Matter Research}{
+Tongyan Lin, PhD
+\begin{itemize}
+    \item UC San Diego Department of Physics
+    \item Associate Professor
+    \item Undergraduate Thesis Advisor
+    \item[ \small{\faCenter{envelope}}] \href{mailto:tol057@ucsd.edu}{tol057@ucsd.edu} 
+\end{itemize}\eatvspace}
+\end{datetabular}
+
+\begin{datetabular}{9em}
+\dateentry{Contact for my work in Astrophysics Research}{
+Alison Coil, PhD
+\begin{itemize}
+    \item UC San Diego Department of Astronomy and Astrophysics
+    \item Department Chair, Professor
+    \item[ \small{\faCenter{envelope}}] \href{mailto:acoil@ucsd.edu}{acoil@ucsd.edu} 
+\end{itemize}\eatvspace}
+\end{datetabular}
+
+\begin{datetabular}{9em}
+\dateentry{Contact for my UC San Diego Academics}{
+Oleg Shpyrko, PhD
+\begin{itemize}
+    \item UC San Diego Department of Physics
+    \item Department Chair, Professor
+    \item Advisor
+    \item[ \small{\faCenter{envelope}}] \href{mailto:oshpyrko@ucsd.edu}{oshpyrko@ucsd.edu} 
+\end{itemize}\eatvspace}
+\end{datetabular}
+
+\begin{datetabular}{9em}
+\dateentry{Contact for my work in Astronomy Club at UC San Diego}{
+Karin Sandstrom, PhD
+\begin{itemize}
+    \item UC San Diego Department of Astronomy and Astrophysics
+    \item Associate Professor
+    \item Club Advisor
+    \item[ \small{\faCenter{envelope}}] \href{mailto:kmsandstrom@ucsd.edu}{kmsandstrom@ucsd.edu} 
+\end{itemize}\eatvspace}
+\end{datetabular}
+
+\end{document}
