@@ -29,7 +29,7 @@
 \vspace{2pt} % Small vertical space between lines
 \end{center}
     \quad 
-    I am an \textbf{A3D3 Post-Baccalaureate Fellow at MIT} and a recent graduate of UC San Diego with a B.S. in Physics (Specialization in Astrophysics). During my undergraduate studies, I developed computational techniques and data analysis skills while investigating various astrophysical phenomena. My research projects have ranged from investigating the ionized gas in the interstellar medium of young, star-forming galaxies to modeling dark matter through stellar stream interactions and dynamics. My current work focuses on developing machine-learning methods for real-time gravitational-wave detection. I aim to \textbf{advance multi-messenger astrophysics by applying modern AI techniques} to uncover new physical insights from the rapidly growing volume of astronomical data as \textbf{I pursue a PhD}. 
+    I am an \textbf{A3D3 Post-Baccalaureate Fellow at MIT} and a recent graduate of UC San Diego with a B.S. in Physics (Specialization in Astrophysics). During my undergraduate studies, I developed skills in computational techniques and data analysis while investigating various astrophysical phenomena. My research projects have ranged from investigating the ionized gas in the interstellar medium of young, star-forming galaxies to modeling dark matter through stellar stream interactions and dynamics. My current work focuses on developing machine-learning methods for real-time gravitational-wave detection. I aim to \textbf{advance multi-messenger astrophysics by applying modern AI techniques} to uncover new physical insights from the rapidly growing volume of astronomical data as \textbf{I pursue a PhD}. 
 \vspace{-1.em}
 \renewcommand*\contentsname{}
     
@@ -74,7 +74,9 @@
 \dateentry{July 2025 -- Ongoing}{
 \textit{Accelerated AI Algorithms for Data Driven Discovery in Physics (A3D3) Post-baccalaureate Fellow}
 \begin{itemize}
-    \item Under the supervision of Dr. Erik Katsavounidis, I'll work in the analysis of gravitational-wave data from the LIGO detectors to identify astrophysical sources and to improve the sensitivity of the searches via the use of Artificial Intelligence methods
+    \item Working under Prof. Erik Katsavounidis, I am developing machine-learning frameworks to improve the low-latency detection and parameter estimation of binary neutron star (BNS) mergers in LIGO-Virgo gravitational-wave data.
+    \item Extending the Aframe and AMPLFI pipelines to enhance sensitivity to low-SNR inspiral signals through domain-adaptive data augmentations, neural likelihood inference, and optimized architectures for lower-mass compact binaries.
+    \item Strengthening expertise in time-domain astrophysics, real-time inference, and large-scale data processing, enabling earlier identification and sky localization of BNS mergers for multi-messenger astronomy.
 \end{itemize}\eatvspace
 }
 \end{datetabular}
@@ -85,19 +87,18 @@
 \dateentry{Jan 2023 -- June 2025}{
 \textit{Streams} x \textit{Machine Learning - Undergraduate Researcher}
 \begin{itemize}
-    \item Worked with Professor Javier Duarte and Professor Tongyan Lin on modeling the interactions between dark matter (DM) subhalos and stellar streams, examining spurs and gaps to infer the dynamical properties of these subhalos and understand their distribution in the galaxy.
-    \item Adapted Denise Erkal's \href{https://academic.oup.com/mnras/article/450/1/1136/1008580}{analytic equations} for modeling velocity perturbations in stellar streams due to DM subhalos flyby, using \texttt{Gala} and \texttt{Galpy} stream generation methods. 
-    \item Validated that synthetic streams closely match the analytic predictions and understood how the different DM subhalo properties affect stream morphology and kinematics, thereby helping us put constraints on these properties.
-    \item Addressed the limitations of traditional Markov Chain Monte Carlo (MCMC) methods, which rely on tractable likelihood functions to recover DM subhalo parameters, by employing advanced Machine Learning (ML) techniques such as Graph Neural Networks (GNNs), Normalizing Flows (nflows), and Simulation-Based Inference (SBI) for scenarios where likelihoods are intractable.
-    \item Modified GNN models and fine-tuned nflows architectures to analyze and model complex posterior distributions to recover the impact properties of DM subhalos from synthetic stellar streams.
-    \item Evaluated and compared MCMC and SBI approaches for inferring DM subhalo parameters, revealing that SBI, despite its potential, did not achieve the expected efficiency and often produced broader posterior distributions compared to the narrower, more accurate posteriors from MCMC.
+    \item Worked under Prof. Javier Duarte and Prof. Tongyan Lin to model the gravitational interactions between dark matter (DM) subhalos and stellar streams, using perturbations such as gaps and spurs to infer subhalo dynamical properties and constrain the DM subhalo mass function.
+    \item Adapted \href{https://academic.oup.com/mnras/article/450/1/1136/1008580}{Erkal (2015)’s} analytic framework for velocity perturbations to generate and evolve synthetic streams with \texttt{Gala} and \texttt{Galpy}, validating that simulated morphologies and kinematics reproduce analytic expectations.
+    \item Developed a pipeline to recover stream–subhalo impact parameters (mass, velocity, time of encounter) using Markov Chain Monte Carlo (MCMC) for streams with tractable likelihoods.
+    \item Extended this framework to complex, non-analytic cases using likelihood-free inference, implementing and training Graph Neural Networks (GNNs) and Normalizing Flows (nflows) on distributed CPU/GPU clusters at the San Diego Supercomputer Center.
 \end{itemize}\eatvspace
-}    
+}
 \end{datetabular}
 
 \begin{datetabular}{9em}
 \dateentry{}{
 \begin{itemize}
+    \item Compared traditional MCMC with Simulation-Based Inference (SBI), finding that MCMC achieved tighter posteriors, while ML-based methods offered faster, scalable inference across large simulated datasets, further highlighting how ML-driven inference can reveal faint DM substructure signatures in upcoming Rubin–LSST data.
     \item Awarded \$7,500 in funding for the research work.
     \item Presented at \textit{243rd American Astronomical Society Conference} in New Orleans, LA.
 \end{itemize}\eatvspace
@@ -108,7 +109,7 @@
 \dateentry{Sep 2022 -- Dec 2022}{
 \textit{{Alison Coil Lab - Undergraduate Researcher}}
 \begin{itemize}
-    \item Coordinated with Professor Alison Coil to investigate the kinematic properties of outflows from accreting supermassive black holes (SMBHs) that drive galactic evolution.
+    \item Worked with Professor Alison Coil to investigate the kinematic properties of outflows from accreting supermassive black holes (SMBHs) that drive galactic evolution.
     \item Conducted data modeling and spectral analysis using Python and IDL's IFSFIT software to perform a two-component Gaussian analysis of SMBH emission spectra, focusing on velocity dispersion in kinematic maps.
     \item Identified the need for a more accurate three-component model to better represent the complex outflow data from SMBHs, highlighting the limitations of the initial two-component approach.
 \end{itemize}\eatvspace
@@ -121,10 +122,10 @@
 \dateentry{Jun 2022 -- Aug 2022}{
 \textit{{Carnegie Astrophysics Summer Student Internship (CASSI) - Summer Intern}}
 \begin{itemize}
-    \item Worked with Carnegie Staff Astronomer Peter Senchyna to investigate the young, star-forming galaxies in the local universe (z < 1) to understand the distribution of highly-ionized [C II] and [O III] gas, using local analogs to study early galactic formation due to the challenges involved in observing high-redshift galaxies.
-    \item Probed the structure of the Interstellar Medium (ISM) in local analogs to see if they were elevated in [O III] emission in comparison to [C II] as observed in high-redshift systems (z > 6).
-    \item Analyzed [O III] and [C II] emission lines from SOFIA data cubes using the SOSPEX package, focusing on flux extraction, and examining ionized gas properties by validating results through comparison with the Dwarf Galaxy Survey (DGS).
-    \item Identified that [C II] is not suppressed; there is strong lower ionization emission in photodissociation regions of the highly-ionized local analogs in contrast with high-redshift systems observed with ALMA, suggesting differences in the ISM structure.
+    \item Worked with Carnegie Staff Astronomer Dr. Peter Senchyna to study metal-poor, star-forming dwarf galaxies (z < 1) as local analogs of high-redshift systems (z > 6), probing interstellar medium (ISM) conditions relevant to early galaxy formation.
+    \item Investigated the distribution of highly ionized gas by analyzing [O III] and [C II] far-infrared emission lines from SOFIA spectroscopic data cubes using the SOSPEX package for flux extraction and line diagnostics.
+    \item Compared [O III]/[C II] ratios and emission morphology with star formation and metallicity indicators, benchmarking results against the Dwarf Galaxy Survey (DGS) to assess ionized gas properties.
+    \item Found that, unlike high-redshift systems observed with ALMA, local analogs show strong low-ionization [C II] emission from photodissociation regions (PDRs), indicating structural differences in the ISM.
     \item Received \$6,000 stipend for the research work.
     \item Presented at \textit{241st American Astronomical Society Conference} in Seattle, WA. 
 \end{itemize}\eatvspace
@@ -137,7 +138,7 @@
 \dateentry{Aug 2021}{
 \textit{{CMAP Undergraduate Summer School - Summer Student}}
 \begin{itemize}
-    \item Coordinated with Professor Pierre Gourdain and utilized scientific Python packages to analyze the collisions in plasma and investigate smooth particle hydrodynamics, magnetohydrodynamics, and single-particle motion.
+    \item Worked under Professor Pierre Gourdain and utilized scientific Python packages to analyze the collisions in plasma and investigate smooth particle hydrodynamics, magnetohydrodynamics, and single-particle motion.
     \item Analyzed simulations for building a two-layer planet to diagnose how density and particle size affect planet formation.
     \item Specialized in identifying the role of planetary characteristics in the evaporation rate for a planet’s atmosphere.
 \end{itemize}\eatvspace
